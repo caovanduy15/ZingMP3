@@ -1,71 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        android:layout_marginBottom="404dp"
         android:text="Tên bài hát"
-        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.089" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button_play"
         android:layout_width="81dp"
         android:layout_height="81dp"
-        android:background="@drawable/play"
-        android:text=""
-        android:onClick="playBtnClick"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="612dp" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="169dp"
+        android:layout_marginRight="169dp"
+        android:layout_marginBottom="78dp"
+        android:background="@drawable/play" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button_previous"
         android:layout_width="78dp"
         android:layout_height="81dp"
-        android:background="@drawable/previous"
-        android:text=""
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="612dp" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="282dp"
+        android:layout_marginRight="282dp"
+        android:layout_marginBottom="78dp"
+        android:background="@drawable/previous" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button_next"
         android:layout_width="78dp"
         android:layout_height="81dp"
-        android:background="@drawable/next"
-        android:text=""
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="612dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="00:00"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="556dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="05:00"
-        tools:layout_editor_absoluteX="356dp"
-        tools:layout_editor_absoluteY="556dp" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="79dp"
+        android:background="@drawable/next" />
 
     <SeekBar
-        android:id="@+id/seekBar2"
+        android:id="@+id/seekBar"
         android:layout_width="258dp"
         android:layout_height="23dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        android:layout_marginBottom="179dp"
         tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="556dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/lastTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="339dp"
+        android:layout_marginRight="339dp"
+        android:layout_marginBottom="181dp"
+        android:text="00:00"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/totalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="179dp"
+        android:text="05:00"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
